@@ -3,5 +3,22 @@
 <body>
 <h1>try to change</h1>
 <p>I'm moving up in the world.</p>
+
+<script>
+
+    function animate () {
+      const fps = 1000
+      setTimeout(animate, fps)
+
+      const r = Math.random() * 150
+      const g = Math.random() * 150
+      const b = Math.random() * 150
+      const a = .3
+      document.body.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${a})`
+    }
+    
+    animate()
+
+  </script>
 </body>
 </html>
