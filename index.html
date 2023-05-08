@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<!--    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.css">-->
+<!--    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css">-->
+<!--    <script src="Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>-->
+<!--    <script src="Leaflet.markercluster-1.4.1/src/MarkerCluster.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/leaflet.heat/0.2.0/leaflet-heat.js"></script>-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+
+    <title>Things That Go Bump in the Light</title>
+
+    <style>
+        #map{
+            height: 800px;
+            width: 800px;
+            margin: 5rem auto;
+        }
+    </style>
+</head>
 <body>
-<h1>try to change</h1>
-<p>I'm moving up in the world.</p>
 
-<script>
+    <h1>Things That Go Bump in the Light</h1>
+    <span>A visual exploration of Chicago's potholes from 2019 to the present.</span>
+    <div id="map"></div>
+<!--    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>-->
+    <script src="main.js"></script>
 
-    function animate () {
-      const fps = 1000
-      setTimeout(animate, fps)
 
-      const r = Math.random() * 150
-      const g = Math.random() * 150
-      const b = Math.random() * 150
-      const a = .3
-      document.body.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${a})`
-    }
-    
-    animate()
-
-  </script>
 </body>
 </html>
